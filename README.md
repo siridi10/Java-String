@@ -1,1 +1,1 @@
-# Java-String
+Details of Java String
