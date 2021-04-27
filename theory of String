@@ -1,0 +1,80 @@
+In java String is IMMUTABLE
+How to create a string object?
+There are two ways to create String object:
+By string literal:
+String s="welcome";
+By new keyword
+String s=new String("Welcome");
+We can compare string on the basis of content and reference.
+There are three ways to compare string in java:
+1.By equals() method
+public boolean equals(Object another) compares this string to the specified object.
+   String s1="Sachin";  
+   String s2="Sachin";  
+   String s3=new String("Sachin");  
+   String s4="Saurav";  
+   System.out.println(s1.equals(s2));//true  
+   System.out.println(s1.equals(s3));//true  
+   System.out.println(s1.equals(s4));//false 
+public boolean equalsIgnoreCase(String another) compares this String to another string, ignoring case.
+   String s1="Sachin";  
+   String s2="SACHIN";  
+   System.out.println(s1.equals(s2));//false  
+   System.out.println(s1.equalsIgnoreCase(s2));//true
+2.By == operator
+The (== )operator compares references not values.
+String s1="Sachin";  
+   String s2="Sachin";  
+   String s3=new String("Sachin");  
+   System.out.println(s1==s2);//true (because both refer to same instance)  
+   System.out.println(s1==s3);//false(because s3 refers to instance created in nonpool)  
+3.By compareTo() method
+s1 == s2 :0
+s1 > s2   :positive value
+s1 < s2   :negative value
+   String s1="Sachin";  
+   String s2="Sachin";  
+   String s3="Ratan";  
+   System.out.println(s1.compareTo(s2));//0  
+   System.out.println(s1.compareTo(s3));//1(because s1>s3)  
+   System.out.println(s3.compareTo(s1));//-1(because s3 < s1 )  
+   
+String Concatenation in Java
+There are two ways to concat string in java:
+By + (string concatenation) operator:
+   String s="Sachin"+" Tendulkar";  
+   System.out.println(s);//Sachin Tendulkar  
+By concat() method
+   String s1="Sachin ";  
+   String s2="Tendulkar";  
+   String s3=s1.concat(s2);  
+   System.out.println(s3);//Sachin Tendulkar
+   
+Substring in Java
+substring startIndex is inclusive and endIndex is exclusive.
+Note: Index starts from 0.
+public String substring(int startIndex):
+String s="SachinTendulkar";  
+   System.out.println(s.substring(6));//Tendulkar  
+public String substring(int startIndex, int endIndex):
+  System.out.println(s.substring(0,6));//Sachin   
+Java String class methods:
+   we can perform operations on string such as trimming, concatenating, converting, comparing, replacing strings etc.
+   Java String toUpperCase() and toLowerCase() method
+   String s="Sachin";  
+   System.out.println(s.toUpperCase());//SACHIN  
+   System.out.println(s.toLowerCase());//sachin
+   Java String trim() method
+   System.out.println(s.trim());//Sachin
+   Java String startsWith() and endsWith() method
+   System.out.println(s.startsWith("Sa"));//true  
+   System.out.println(s.endsWith("n"));//true
+   Java String charAt() method
+   System.out.println(s.charAt(3));//h
+   Java String length() method
+   System.out.println(s.length());//6 
+   Java String valueOf() method
+   The string valueOf() method coverts given type such as int, long, float, double, boolean, char and char array into string.
+   Java String replace() method
+   String replaceString=s1.replace("Sachin","siridi");//replaces all occurrences of "Java" to "Kava"    
+   System.out.println(replaceString); //siridi 
