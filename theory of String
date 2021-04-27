@@ -1,10 +1,12 @@
 In java String is IMMUTABLE
+
 How to create a string object?
 There are two ways to create String object:
 By string literal:
 String s="welcome";
 By new keyword
 String s=new String("Welcome");
+
 We can compare string on the basis of content and reference.
 There are three ways to compare string in java:
 1.By equals() method
@@ -57,24 +59,32 @@ public String substring(int startIndex):
 String s="SachinTendulkar";  
    System.out.println(s.substring(6));//Tendulkar  
 public String substring(int startIndex, int endIndex):
-  System.out.println(s.substring(0,6));//Sachin   
+  System.out.println(s.substring(0,6));//Sachin
+  
 Java String class methods:
    we can perform operations on string such as trimming, concatenating, converting, comparing, replacing strings etc.
+   
    Java String toUpperCase() and toLowerCase() method
    String s="Sachin";  
    System.out.println(s.toUpperCase());//SACHIN  
    System.out.println(s.toLowerCase());//sachin
+   
    Java String trim() method
    System.out.println(s.trim());//Sachin
+   
    Java String startsWith() and endsWith() method
    System.out.println(s.startsWith("Sa"));//true  
    System.out.println(s.endsWith("n"));//true
+   
    Java String charAt() method
    System.out.println(s.charAt(3));//h
+   
    Java String length() method
-   System.out.println(s.length());//6 
+   System.out.println(s.length());//6
+   
    Java String valueOf() method
    The string valueOf() method coverts given type such as int, long, float, double, boolean, char and char array into string.
+   
    Java String replace() method
    String replaceString=s1.replace("Sachin","siridi");//replaces all occurrences of "Java" to "Kava"    
    System.out.println(replaceString); //siridi 
