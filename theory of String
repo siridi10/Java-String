@@ -88,3 +88,13 @@ Java String class methods:
    Java String replace() method
    String replaceString=s1.replace("Sachin","siridi");//replaces all occurrences of "Java" to "Kava"    
    System.out.println(replaceString); //siridi 
+   
+   StringTokenizer in Java
+   The java.util.StringTokenizer class allows you to break a string into tokens. It is simple way to break string.
+      StringTokenizer st = new StringTokenizer("my name khan"," ");  
+      while (st.hasMoreTokens()) {  
+         System.out.println(st.nextToken()); // my 
+                                                name 
+                                                khan
+                                                
+                                   
