@@ -1,0 +1,54 @@
+1.public class StringToCharArrayExample{  
+public static void main(String args[]){  
+String s1="hello";  
+char[] ch=s1.toCharArray();  
+for(int i=0;i<ch.length;i++){  
+System.out.print(ch[i]);  
+}  
+}}
+ 
+ 
+ OUTPUT
+ -----
+ hello
+ 
+ 
+2.public class StringToCharArrayExample2 {  
+    public static void main(String[] args) {  
+        String s1 = "Welcome to Javatpoint";  
+        char[] ch = s1.toCharArray();  
+        int len = ch.length;  
+        System.out.println("Char Array length: " + len);  
+        System.out.println("Char Array elements: ");  
+        for (int i = 0; i < len; i++) {  
+            System.out.println(ch[i]);  
+        }  
+    }  
+}  
+
+
+OUTPUT
+-------
+Char Array length: 21
+Char Array elements: 
+W
+e
+l
+c
+o
+m
+e
+ 
+t
+o
+ 
+J
+a
+v
+a
+t
+p
+o
+i
+n
+t
