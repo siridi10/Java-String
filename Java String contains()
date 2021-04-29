@@ -1,0 +1,26 @@
+It is case sensitive.
+1.public class Main
+{
+	public static void main(String[] args) {
+	    String name="SIRIDI IS A GOOD BOY";
+	    if((name.contains("GOOd"))){
+	        System.out.println("yes it contains");                                 1.OUTPUT
+	    }else{                                                                      ---------
+	        System.out.println("false");                                            false
+	    }
+	}
+}
+
+
+2.public class Main
+{
+	public static void main(String[] args) {
+	    String name="SIRIDI IS A GOOD BOY";
+	    if((name.contains("GOOD"))){
+	        System.out.println("yes it contains");                                        2. OUTPUT
+	    }else{                                                                            --------
+	        System.out.println("false");                                                 yes it contains
+	    }
+	}
+}
+
